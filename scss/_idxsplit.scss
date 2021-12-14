@@ -1,0 +1,87 @@
+.split {
+    margin:30px 5vw;
+    width: 90vw;
+    height: 750px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(tablet){
+        margin:30px 0vw;
+        width: 100vw;
+        flex-flow: row;
+        height: 400px;
+    
+    }
+    
+
+    &__image{
+        width: 300px;
+        height: 300px;
+        border: rgb(255, 255, 255) solid 15px;
+        
+        &--nerd{
+            background-image: url('../media/idx/faq.jpg');
+            box-shadow: -8px 4px 6px $clr-shad-central;
+            &:hover{
+                animation: spingy 1s ease-out 150ms forwards;
+            }
+
+   
+        }
+        &--dealer{
+            background-image: url('../media/idx/contacto.jpg');
+            box-shadow: -8px 4px 6px $clr-shad-central;
+            @include breakpoint(tablet){
+            box-shadow: -2px 4px 6px $clr-shad-central;
+            }
+            &:hover{
+                animation: spingx .5s ease-out 150ms backwards;
+            }
+        }
+        &--nerd,
+        &--dealer{
+            background-attachment:local;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        @include breakpoint(tablet){
+            width: 234px;
+            height: 234px;
+            }
+            @include breakpoint(notebook){
+                width: 300px;
+                height: 300px;
+            }
+        }
+    &__text{
+        width: 300px;
+        height: 30vh;
+        padding: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        background: $clr-bkg-sixth;
+    
+    @include breakpoint(tablet){
+        width: 300px;
+        height: 234px;
+
+    }
+    @include breakpoint(notebook){
+        width: 480px;
+        height: 300px;
+    }
+    }
+        
+    &__title{
+        text-align: center;
+        @include caption ($clr-text, $clr-shad-central)
+    }
+    &__par{
+        text-align: center;
+        @include tale ($clr-text, $clr-shad-central)
+    }
+}

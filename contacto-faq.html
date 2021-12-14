@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Contáctate con nosotros o resuelve dudas sobre formas de pago, envío, delivery, qué insumos utilizamos en la Peluquería Canina o cómo funciona la guardería!">
+    <meta name="keywords"
+        content="enviar consultas sobre pawpaw, enviar comentarios sobre pawpaw, como comprar alimento balanceado, envios a domicilio, envio accesorios perro, peluqueria canina, peluqueria perro, guarderia perros, guarderia canina">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PAWPAW Contacto y FAQs</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div id="btnsHeadSet">
+            <div class="btnsHeadSet__log" id="iconLog">
+                <a class="userLogIn" id="btnForUsers" ><i class="fa fa-user" ></i></a>
+            </div>
+            <a class="shopkart" href="productos.html" ><i class="fa fa-shopping-cart"></i></a>
+            <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+        </div>   
+        <div class="menu">
+            <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+        <input id="nav" class="menu__input" type="checkbox">
+        <nav class="menu__nav">
+            <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+            <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+            <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+            <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+    <!--main con dos section-->
+    <main>
+
+        <section class="hero hero--contact">
+            <div class="hero__container">
+                <h1 class="hero__title">Somos PAWPAW!</h1>
+                <p class="hero__text">Una veterinaria y mucho más, pensada para dar el mejor servicio a los dueños y sus mascotas</p>
+                <div class="hero__buttons">
+                <a href="#get-in-touch" class="btn">Escribinos!</a>
+                <a href="#responding" class="btn btn--minor btn--resp">FAQ's</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="third third--contact">
+            <section class="third--contact" id="get-in-touch">
+                <div class="third__container third__container--map">
+                    <div class="third__ubication">
+                        <h2 class="third__title">¿Dónde se encuentra PawPaw?</h2>
+                        <p class="third__text">El local central de PawPaw, se encuentra en la calle Av. Monroe 4500, en Villa Urquiza, en la Ciudad Autónoma de Buenos Aires. </p>
+                    </div>
+                    <iframe class="third__gps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.32429037823!2d-58.482000185036625!3d-34.57066016325625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb663fc1ad7d9%3A0x94b6352088a79cc5!2sAv.%20Monroe%204500%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1624048071823!5m2!1ses-419!2sa "
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        aria-describedby="mapa-ubicacion-local">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="third__form third--contact third__form--contact">
+                <form class="third__subject third__subject--contact" id="newMessage" action="" method="post">
+                    <h3 class="third__lead">Formulario de Contacto</h3>
+                        <div class="third__profile">
+                            <div class="third__name">
+                                <label for="fullname-contact" hidden>
+                                    <p class="third__par">Nombre/s y Apellido/s</p>
+                                </label>
+                                <input class="third__input" type="text" id="fullnameContact" name="fullname-contact"
+                                    pattern="[A-Za-z]{03-15}" autocomplete="on" required placeholder="Nombre/s y Apellido/s">
+                            </div>
+            
+                            <div class="third__phone">
+                                <label class="third__label" for="phone-contact" hidden>
+                                    <p class="third__par">Nro. de Teléfono</p>
+                                </label>
+                                <input class="third__input" type="tel" id="phoneContact" name="phone-contact" minlength="13"
+                                    pattern="[0-9]{1}-[0-9]{4}-[0-9]{8}" autocomplete="on" required placeholder="Nro. de Teléfono">
+                            </div>
+            
+                            <div class="third__mail">
+                                <label class="third__label" for="email-contact" hidden>
+                                    <p class="third__par">Casilla de Correo</p>
+                                </label>
+                                <input class="third__input" type="email" id="emailContact" name="email-contact"
+                                    placeholder="casilla@correo.com" autocomplete="off" required>
+                            </div>
+            
+                            <div class="third__pet">
+                                <label class="third__label" for="name-pet-contact" hidden>
+                                    <p class="third__par">Nombre del Perro</p>
+                                </label>
+                                <input class="third__input" type="text" id="namePetContact" name="name-pet-contact"
+                                    pattern="[A-Za-z]{03-15}" required placeholder="Nombre del Perro">
+                            </div>
+                        </div>
+
+                        <div class="third__consultation">
+                            <label class="third__label" for="consultation-contact" hidden>Dejanos aquí tus consultas o
+                                comentarios</label>
+                            <textarea class="third__textarea " id="consultationContact" name="consultation" cols="35" rows="5"
+                                style="resize:none" placeholder="Dejanos aquí tus consultas o comentarios" required></textarea>
+                        </div>
+                </form>
+                <button class="btn btn--contact" id="btnForm" type="submit" >Enviar</button>
+            </section>
+
+            <section class="faq" id="responding">
+                <div class="faq__framing"></div>
+                <div class="faq__cover">
+                    <h4 class="faq__title">Respuestas a las Preguntas Frecuentes</h4>
+                    <p class="faq__text">Encuentra aquí todas las respuestas que necesitas. Si tu pregunta no se
+                        resuelve, puedes enviarnos un mensaje</p>
+                </div>
+
+                <div class="faq__accordion">
+                    <h5 class="faq__lead">Medios de Pago</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq1">
+                        <label for="faq1" class="faq__label">¿Qué medios de pago tenemos?</label>
+                        <p class="faq__par"> Los productos se pueden abonar en efectivo transferencia bancaria, en el
+                            acto y contra entrega del producto y/o Mercado Pago. Tu compra va a estar 100% protegida y
+                            te devolveremos el dinero si el producto no es lo que esperabas.Contás con 3 y 6 cuotas sin
+                            interés con tarjetas de crédito Visa, Amex y Mastercard de cualquier banco todos los días.
+                        </p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq2">
+                        <label for="faq2" class="faq__label">¿Cómo recibo la factura?</label>
+                        <p class="faq__par">Puedes dejarnos tu correo al realizar el pedido por whatsapp, la recibirás
+                            vía email en formato PDF.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq3">
+                        <label for="faq3" class="faq__label">¿Hay un costo añadido por el envío en moto?</label>
+                        <p class="faq__par">Si, Podrás ver el costo de envío al momento de solicitar el producto por
+                            whatsapp -antes de abonar-.</p>
+                    </div>
+                </div>
+
+                <div class="faq__accordion">
+                    <h5 class="faq__lead">Envíos</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq4">
+                        <label for="faq4" class="faq__label">¿Cuáles son los métodos de envío disponibles?</label>
+                        <p class="faq__par">Para productos de consumo canino podrás solicitar envío a domicilio o
+                            retirar en el local o deposito general. Para productos no comestibles, de Bazar y Textiles
+                            actualmente sólo realizamos envío con moto o por empresa de correo.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq6">
+                        <label for="faq6" class="faq__label">¿Puedo hacer un pedido y recibirlo el mismo día?</label>
+                        <p class="faq__par">Sí, podes realizar tu pedido el mismo día mientras que lo realices con 5
+                            horas de anticipación a la banda horaria que querés recibirlo en tu domicilio.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq9">
+                        <label for="faq9" class="faq__label">¿Puedo cambiar o agregar más productos una vez que confirmé
+                            mi Pedido?</label>
+                        <p class="faq__par">Si, simpre que el despacho ya no haya sido realizado, en ese caso no podemos
+                            evitar.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq11">
+                        <label for="faq11" class="faq__label">¿Se puden reprogramar repartos?</label>
+                        <p class="faq__par">Si, se pueden reprogramar repartos hasta con varias semanas de anticipación
+                            y por tiempo indefinido.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq12">
+                        <label for="faq12" class="faq__label">¿Se puede cancelar un pedido?</label>
+                        <p class="faq__par"> Sí, podrás cancelar el pedido siempre y cuando no haya sido despachado a tu
+                            domicilio, en ese caso deberás rechazar la entrega. En cualquiera de los dos casos deberás
+                            comunicarte por whatsapp.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq13">
+                        <label for="faq13" class="faq__label">¿Qué pasa si no hay nadie en el domicilio al momento de la
+                            entrega del cadete?</label>
+                        <p class="faq__par">Si por algún motivo no pueden concretar la entrega en el primer intento, se
+                            comunicarán telefónicamente para acordar una segunda entrega con día y horario pre-acordado.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq__accordion">
+
+                    <h5 class="faq__lead">Accesorios</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq19">
+                        <label for="faq19" class="faq__label">¿Qué accesorios pueden resultar imprescindible a la hora
+                            de tener un perro?</label>
+                        <p class="faq__par">Si es la primera vez que tienes un perro, puede que no sepas las cosas
+                            esenciales que va a necesitar tu nuevo amigo. Para ayudarte hemos reunido para ti una serie
+                            de recomendaciones y de artículos que tu mascota va a necesitar: Platos para agua y para la
+                            comida. Una cobija abrigada. Una cama. Collar y correa. Juguetes. Bolsas para recoger sus
+                            necesidades. Celiso o peine. Hay razas que requieren abrigos, en épocas invernales. Como así
+                            también, otras que requieren cuidados para estar hidratados en el verano, puedes consultar
+                            que productos requiere tú mascota a nuestros veterinarios de PawPaw.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq20">
+                        <label for="faq20" class="faq__label">¿Cómo tomar medidas para elegir el talle de ropa para mi
+                            perro?</label>
+                        <p class="faq__par">Solo necesitamos la medida de largo. Tomamos la cinta métrica y colócamos
+                            sobre la espalda de tu perro, midiendo desde la base del cuello hasta la base de la cola.
+                            Esta medida debe tomarse desde la parte inferior del cuello hasta el punto en que la cola se
+                            une al cuerpo (no la punta). Anota este número como la medida del largo.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq24">
+                        <label for="faq24" class="faq__label">¿Qué juguetes comprar para mi perro?</label>
+                        <p class="faq__par">Juguetes para liberar estrés : Un mordedor, Un disco volador (o
+                            frisbee) para perros, Un hueso de juguete es ideal. Juguetes para estimular la mente: platos
+                            que esconden los alimentos o dificultan su acceso. Alfombra olfativa para perros, que
+                            esconden premios o juguetes Pelota dental interactiva para perros Con ranuras que limpian
+                            los dientes del perro.</p>
+                    </div>
+                </div>
+
+                <div class="faq__accordion">
+                    <h5 class="faq__lead">Alimentos</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq17">
+                        <label for="faq17" class="faq__label">¿Qué tal son los Alimentos que vendemos en PawPaw?</label>
+                        <p class="faq__par">Todos los productos que son vendidos en nuestro nombre, son productos
+                            aprobados por anmat, ya sean ingredientes, políticas de saneamiento y prácticas de
+                            fabricación, se encuentran bajo reglamentación y regulación de los productores de los
+                            mismos. Pero, nosotros también seleccionamos y advertimos por comentarios o valoraciones de
+                            nuestros propios usarios que productos vender y cuáles no.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq18">
+                        <label for="faq18" class="faq__label">Comprometidos con la calidad y seguridad
+                            alimentaria</label>
+                        <p class="faq__par">La calidad nutricional y la seguridad del producto alimenticio que te
+                            llevas, es nuestra máxima preocupación.</p>
+                    </div>
+                </div>
+
+                <div class="faq__accordion">
+                    <h5 class="faq__lead">Guardería</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq31">
+                        <label for="faq31" class="faq__label">¿Qué Funciones tiene la Guardería Paw Paw?</label>
+                        <p class="faq__par">Nuestra guardería tiene 2 funciones destacadas: Ofrecer un contexto de ocio,
+                            sin stress y de desarrollo para socialbilizador con otros perros para tú mascota. Y el
+                            segundo es dar un servicio para las familias que creen que la guardería es importante para
+                            que sus perros tengan una mejor calidad de vida, o para las familias en que los dueños
+                            trabajan y durante ese tiempo el perro sufre soledad.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq32">
+                        <label for="faq32" class="faq__label">¿Cómo trabajamos en la Guardería Paw Paw</label>
+                        <p class="faq__par"> La recepción y devolución de la mascota. Mantenemos al perro en condiciones
+                            adecuadas de higiene facilitando buenos hábitos de higiene y alimentación. Proporcionamos
+                            alimentación indicada por veterinarios y enseñamos a comer y promovemos la formación de
+                            hábitos de orden, higiene y alimentación. Vigilamos a los perros en todas las actividades
+                            que realicen, previniendo posibles accidentes. Colaboramos en el mantenimiento del orden, la
+                            limpieza y las condiciones higiénicas-sanitarias de la guardería. Acompañamos y ayudamos en
+                            la realización de actividades y juegos. Colaboramos con el resto de profesionales en las
+                            instalaciones geriatricas donde llevamos a los perros para que desarrollen apoyos
+                            terapéuticos.</p>
+                    </div>
+                </div>
+
+                <div class="faq__accordion">
+                    <h5 class="faq__lead">Peluquería</h5>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq26">
+                        <label for="faq26" class="faq__label">¿Peluquería Profesional Canina?</label>
+                        <p class="faq__par">Los peluqueros caninos son profesionales especializados en higiene y
+                            estética que tienen como objetivo preservar la salud de las mascotas. No se trata solo de
+                            cumplir una función estética, sino de cuidar la higiene de la manera más óptima posible para
+                            ofrecerle mejores cuidados y mejorar su calidad de vida.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq27">
+                        <label for="faq27" class="faq__label">¿Qué hacemos en la peluquería de PawPaw?</label>
+                        <p class="faq__par">Nos encargamos de inspeccionar la salud del animal. Cuando se realiza un
+                            baño no solo lo asemos, sino que le realizamos una inspección minuciosa que podría avisarnos
+                            con tiempo de algún problema de salud que pueda acarrear tú mascota y que no hayamos visto a
+                            simple vista. En la peluquería se le realizará un baño en profundidad que ayudará a detectar
+                            posibles parásitos e infecciones.  También nos puede ayudar a evitar posibles problemas
+                            auditivos. La limfotza de los oídos de la mascota, lo que puede evitar son infecciones y
+                            problemas más graves de salud. Y lo mismo ocurre con la dentadura.</p>
+                    </div>
+
+                    <div class="faq__answer">
+                        <input class="faq__inputs" type="checkbox" name="acord" id="faq29">
+                        <label for="faq29" class="faq__label">¿Qué Productos usamos en la Peluquería Paw Paw?</label>
+                        <p class="faq__par">Seleccionamos el shampoo adecuado y el corte de pelo correspondiente para
+                            cada perro, algunas marcas como DersmoSedan o Free-Natur son mejores para algunos casos y en
+                            otras OssPet o MasKota. También se realiza tratamientos anti-pulgas, pedicura, tratamientos
+                            para la fotl, hidratan e incluso de ser necesario, se realiza masajesde relajación al perro
+                            con aceites hidratantes. Parece mucho, pero no.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="sitemap">
+            <h4 class="sitemap__title">Mapa del Sitio</h4>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--div de POPUP-->
+    <div class="seventh">
+        <div class="seventh__signLog" id="workBoard">
+    
+                <div class="seventh__framing">
+                    <form class="seventh__subject" id="logSign">
+    
+    
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    <!--para conectar el archivo JS-->
+        <script src="javascript/vainilla.js"></script>
+        <script src="javascript/login.js"></script>
+</body>
+
+</html>

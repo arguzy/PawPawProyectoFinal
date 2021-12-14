@@ -1,0 +1,88 @@
+.services{
+    width: 90vw;
+    height: 1176px;
+    margin: 5vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoint (tablet){
+    flex-direction: row-reverse;
+    height:650px;
+    }
+
+    
+    &__container{
+        @include breakpoint (tablet){
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        }
+    &__barber{
+        min-width: 245px;
+        width: 35vw;
+        background-image: url(../media/idx/bann-barber.jpg);
+        background-position: left;
+        border-image-source: $clr-mirror;
+        @include breakpoint (tablet){
+            &:hover{
+                transform: rotate(10deg);
+                transition: 1s;
+                background-position:right;
+                box-shadow: 12px 8px 16px 0 $clr-shad;
+              }
+        }
+    }
+    &__kinder{
+        min-width: 245px;
+        width: 35vw;
+        background-image: url(../media/idx/bann-kinder.jpg);
+        background-position: right;
+        border-image-source: $clr-reflex; 
+        @include breakpoint (tablet){
+            &:hover{
+                transform: rotate(-10deg);
+                transition: 1s;
+                background-position:left;
+                box-shadow: -12px 8px 16px 0 $clr-shad;
+              }
+        }
+    }
+
+    &__barber,
+    &__kinder{
+        height: 542px;
+        background-attachment:local;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 5vw;
+        padding: 1em;
+        border-image-slice: 1;
+        border-width: 5px;
+        transition: 1s;
+        border-style: ridge;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+        @include breakpoint (tablet){
+            margin: 5vw;
+            height: 600px;
+        }
+    }
+
+    &__title{
+        padding: 1em 0;
+        text-align: center;
+        @include caption ($clr-tlt-oppsite, $clr-shad)
+    }
+    &__subtitle{
+        padding: 1em 0;
+        text-align: center;
+        @include chief ($clr-text, italic, $clr-shad)
+
+    }
+    }
+
+

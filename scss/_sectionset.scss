@@ -1,0 +1,155 @@
+.hero{
+    min-height: 90vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items: center;
+    @include breakpoint (tablet){
+    align-items: flex-start;
+    }
+    &--index {
+    background-image: url('../media/idx/wall-idx.jpg');
+}
+    &--contact{
+    background-image: url('../media/cont/wall-hero-cnt.png');
+}
+    &--barber {
+    background-image: url('../media/barber/wall-hero-barber.jpg');
+}
+    &--kinder{
+    background-image: url('../media/kinder/wall-hero-kinder.jpg');
+}
+    &--products {
+    background-image: url('../media/prdts/wall-hero-shop.jpg');
+}
+    &--index,  
+    &--contact,
+    &--kinder,
+    &--barber,
+    &--products{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }            
+ &__container{
+    margin-left: .5em;
+    width: 60vw;
+    max-width: 320px;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint (tablet){
+        max-width: 500px;
+        margin-top: 1.2em;
+        padding-left: 2em;
+        align-items:center;
+    }
+}
+&__title{
+    padding-bottom: .8em;
+    padding-left: .3em;
+    text-align: center;
+    @include caption ($clr-text, $clr-shad);
+    @include breakpoint (notebook){
+    font-size: 2.5em;
+    }
+
+}
+&__text{
+    max-width: 320px;
+    padding-bottom: .8em;
+    padding-left: .5em;
+    text-align: center;
+    @include chief ($clr-text, normal, $clr-shad);
+}
+&__buttons{
+    text-align: center;
+}
+}
+.secondary{
+    margin-top: 100px;
+    min-width: 100vw;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.third{
+    width: 100vw;
+
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+   &--contact{
+    @include breakpoint (tablet){
+      flex-flow: wrap;
+    }
+    } 
+}
+
+.quarter{
+    margin-top: 100px;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.eighth{
+        margin-top: 100px;
+        min-width: 100vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;  
+        
+        
+       &__banner{
+           margin-top: 50px ;
+           margin-bottom: 50px;
+           width: 100vw;
+           height: fit-content;
+           background-color: rgba(33, 0, 181, 0.68);
+           border: rgb(204, 204, 204) solid 3px;
+
+       } 
+       &__textBanner{
+           @include caption ($clr-text, $clr-shad); 
+           text-align: center;
+       }
+       &__btnBanner{
+           text-decoration: none ;
+           margin: 10px;
+        font-family: Quicksand, sans-serif;
+        font-weight: bold;
+        color: #3b3b3b;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px #dcdcdc solid;
+        padding: 10px 18px;
+        background: linear-gradient(183deg, #ffffff 8%, #d1d1d1 58%);
+        text-shadow: 1px 2px 6px rgba(84, 84, 84, 0.7);
+        box-shadow: inset -1px 1px 3px 1px rgba(79, 79, 79, 0.46);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+    }
+    &__btnBanner:hover{
+        background: linear-gradient(183deg, #d1d1d1 8%, #ffffff 58%);
+    }
+    }
+#backToProducts{
+    text-decoration: none;
+}

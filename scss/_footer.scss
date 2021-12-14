@@ -1,0 +1,187 @@
+footer{
+    margin-top: 100px;
+    bottom: 0;
+    height:742px;
+    padding-top: 2em;
+    background: $clr-segments;
+    display: grid;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    @include breakpoint (tablet){
+        height: 642px;
+        display: grid;
+        grid-template-columns: [x0] 2fr [x1] 1fr [x2] 2fr [x3];
+            grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+            align-items: flex-start;  
+        }
+    }
+    
+    .sitemap{
+        text-align: center;
+        color: $clr-text;
+        @include breakpoint (tablet){
+            grid-column: x0 / x1 ;
+            grid-row: y0 / y2;
+        }
+        
+    &__title{
+        text-align: center;
+        @include caption ($clr-text, $clr-shad-central);
+    }
+    
+    &__li{
+        padding: .3em;
+        :hover{
+            color: $clr-hovers;
+        }
+    }
+    
+    
+    &__links{
+        text-decoration: none;
+        @include chief ($clr-text, normal, $clr-shad-central);
+        text-align: center;
+        
+    }
+}
+
+.address{
+    height: 16em;
+    @include breakpoint (tablet){
+        height: 20em;
+        margin-top: 1.5em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: x2 / x3;
+        grid-row: y1 / y2; 
+    }
+    
+    &__ul{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        list-style: none;
+    }
+    &__li{
+        text-decoration: none;
+        margin: 1em;
+    }
+    &__title{
+        text-align: center;
+        @include subcaption ($clr-text, $clr-shad-central)
+    }
+    
+    &__subtitle{
+        width: fit-content;
+        text-decoration: none;
+        border-bottom: .1em solid $clr-hovers;
+        @include chief ($clr-text,normal, $clr-shad-central)
+    }
+    &__par{
+        text-align: center;
+        @include concept ($clr-text, $clr-shad-central)
+    }
+}
+
+.newsletter{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include breakpoint (tablet){
+        grid-column: x2 / x3;
+        grid-row: y0 / y1;
+    }
+    
+    &__label{
+        @include caption ($clr-text, $clr-shad-central);
+        padding-bottom: .5em;
+        
+    }
+    
+    &__input{
+        border: 2px solid $clr-brdrs;
+        width: 50vw;
+        padding: .6em;
+        text-align: center;
+        color: $clr-text-oppsite;
+        font-family: 'Comfortaa',  sans-serif;
+        @include breakpoint (tablet){
+            width: 20vw;
+            
+    }
+    &::placeholder{
+        padding: .6em;
+        font-size: .8em;
+        @include breakpoint (notebook){
+        font-size: 1.2em;
+        }
+        
+    }
+}
+
+&__btn{
+    width: 50vw;
+    padding: .6em;
+    border: 2px solid $clr-brdrs;
+    background-color: $clr-iconic-opposite;
+    color: $clr-text;
+    font-family: 'Comfortaa',  sans-serif;
+    @include breakpoint (tablet){
+        width: 20vw;
+    }
+    &:hover{
+        background-color: $clr-hovers;
+    }
+}
+}
+
+.social{
+    font-size: 3em;
+    @include breakpoint (tablet){
+        grid-column: x1 / x2;
+        grid-row: y0 / y2;
+    }
+    
+    &__ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        @include breakpoint (tablet){
+            padding-top: .1em;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+    }
+    &__li{
+        &:hover{
+    animation: spingx 1s infinite ease-in-out;
+    }
+    }
+    &__icon{
+        text-decoration: none;
+        padding: .3em;
+        color: $clr-iconic-opposite;
+        @include breakpoint (tablet){
+            font-size: 1em;
+            :hover{
+                color: $clr-hovers;
+            }
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+    color: $clr-text;
+    @include breakpoint (tablet){
+        grid-column: x0/x3;
+        margin-top: 2.5em;
+    }
+    
+    &__text{
+        @include tale ($clr-text, $clr-shad-central)
+    }
+}

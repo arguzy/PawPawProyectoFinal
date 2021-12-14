@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ERROR 404</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div id="btnsHeadSet">
+            <div class="btnsHeadSet__log" id="iconLog">
+                <a class="userLogIn" id="btnForUsers" ><i class="fa fa-user" ></i></a>
+            </div>
+            <a class="shopkart" href="productos.html" ><i class="fa fa-shopping-cart"></i></a>
+            <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+        </div>  
+        <div class="menu">
+            <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+        <input id="nav" class="menu__input" type="checkbox">
+        <nav class="menu__nav">
+            <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+            <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+            <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+            <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+    <!--Main-->
+    <!--Sólo una section, con el mensaje. Tiene dos animaciones como para no dejarla muy liviana-->
+    <main>
+        <section class="e404">
+            <div class="e404__framing">
+                <i class="fa fa-exclamation-circle e404__icon" aria-hidden="true"></i>
+                <p class="e404__title">ERROR HTTP​ 404</p>
+                <p class="e404__text"> La página y el contenido ya no están disponibles</p>
+                <p class="e404__return">Vuelve, por aquí<a class="e404__havefive" href="index.html"><i
+                            class="fa fa-hand-rock-o" aria-hidden="true"></i></a></p>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="sitemap">
+            <h4 class="sitemap__title">Mapa del Sitio</h4>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!--Div para PopUP-->
+    <div class="seventh">
+        <div class="seventh__signLog" id="workBoard">
+    
+                <div class="seventh__framing">
+                    <form class="seventh__subject" id="logSign">
+    
+    
+                        
+                    </form>
+                </div>
+                
+            </div>
+    </div>
+
+    <!--para conectar el archivo JS-->
+        <script src="javascript/login.js"></script>
+</body>
+
+</html>

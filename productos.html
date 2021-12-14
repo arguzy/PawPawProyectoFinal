@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Ropa, Correas, Pretales, Tazones, Juguetes y Alimentos Balanceados para tu perro. Marcas nacionales e importadas, consultar ofertas y fechas de on-sale!">
+    <meta name="keywords"
+        content="petshop canina, petshop perros, petshop perro capital federal, petshop perro capital federal, petshop perro caba, petshop perro villa urquiza, petshop, accesorios perro, ropa perro, pretales perro, correas perro, tazón perro, bowl perro, alimento balanceado perro, juguete perro, juguetes perro">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>PAWPAW PetShop</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div id="btnsHeadSet">
+            <div class="btnsHeadSet__log" id="iconLog">
+                <a class="userLogIn" id="btnForUsers" ><i class="fa fa-user" ></i></a>
+            </div>
+            <a class="shopkart" ><i class="fa fa-shopping-cart" id="btnToShopKart"><span id="counterArray"></span></i></a>
+            <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+        </div>  
+        <div class="menu">
+            <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+        <input id="nav" class="menu__input" type="checkbox">
+        <nav class="menu__nav">
+            <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+            <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+            <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+            <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+    <!--Main con 2 section una hero y otra para la impresión dinamica de card y el funcionamiento del carrito-->
+    <main>
+        <section class="hero hero--products">
+            <div class="hero__container">
+                <h1 class="hero__title">PAWPAW Petshop, Accesorios y Más</h1>
+                <p class="hero__text">Alimentos Balancedos y Accesorios de todo tipo. Mira todas las ofertas!</p>
+                <a href="#ofertas" class="btn btn--hero">Ver ofertas!</a>
+            </div>
+            <div>
+                <a class="hero__whapp"
+                    href="https://api.whatsapp.com/send?phone=541151118888&text=Completa%20estos%20datos%2C%20para%20solicitar%20productos%3A%0A%F0%9F%90%BENombre%20y%20apellido%3B%0A%F0%9F%8F%9A%EF%B8%8FDirecci%C3%B3n%3B%0A%F0%9F%86%94C%C3%B3digo%20de%20Producto%3B%0A%23%EF%B8%8F%E2%83%A3Cantidad%20por%20Producto%3B%0A%E2%8C%9AD%C3%ADa%20y%20Horario%20en%20que%20podes%20Recibir%20la%20Entrega%3B"
+                    target="_blank"><i class="fa fa-phone"></i></a>
+            </div>
+        </section>
+
+        <section class="quarter">
+
+
+            <section class="quarter__stock" id="ofertas">
+                <div class="quarter__filter">
+                    <input class="quarter__funnel" type="radio" id="all" name="categories" value="all" checked>
+                    <input class="quarter__funnel" type="radio" id="pots" name="categories" value="pots">
+                    <input class="quarter__funnel" type="radio" id="food" name="categories" value="food">
+                    <input class="quarter__funnel" type="radio" id="clothe" name="categories" value="clothe">
+                    <input class="quarter__funnel" type="radio" id="belt" name="categories" value="belt">
+                    <input class="quarter__funnel" type="radio" id="pretals" name="categories" value="pretals">
+                    <input class="quarter__funnel" type="radio" id="toys" name="categories" value="toys">
+
+                    <div class="quarter__widget">
+                        <div class="quarter__board">
+                            <input class="quarter__input" type="checkbox" name="knob" id="filtering">
+                            <label class="quarter__knob" for="filtering"><i class="fa fa-filter"></i>Filtros</label>
+                            <div class="quarter__expanded"></div>
+                            <ul class="quarter__inventory">
+                                <li class="quarter__segment quarter__segment--all">
+                                    <label class="quarter__lines" for="all">Todos</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--pots">
+                                    <label class="quarter__lines" for="pots">Tazones</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--food">
+                                    <label class="quarter__lines" for="food" id="OutOfCover">Alimento</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--clothe">
+                                    <label class="quarter__lines" for="clothe">Ropa</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--belt">
+                                    <label class="quarter__lines" for="belt">Correas</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--pretals">
+                                    <label class="quarter__lines" for="pretals">Pretales</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--toys">
+                                    <label class="quarter__lines" for="toys">Juguetes</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="quarter__catalog" id="catalog"></div>
+                </div>
+            </section>
+
+            <div class="fifth__overlay">
+            <div class="fifth__capsule">
+            <table class="fifth__table">
+                <caption class="fifth__head"><a class="fifth__headbtn" href="sumarioDeCompra.html" id="toSummaryBuy"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="fifth__headtext">Pagar!</span></a>
+                </caption>
+                <button class="fifth__btnClose" id="closeShopKart"><i
+                    class="fa fa-times-circle-o"></i></button>
+                            </div>
+                <thead class="fifth__deck">
+                    <tr class="fifth__headlines">
+                        <th class="fifth__forehead">Imagen</th>
+                        <th class="fifth__forehead">Nombre</th>
+                        <th class="fifth__forehead">Precio</th>
+                        <th class="fifth__forehead">Cantidad</th>
+                        <th class="fifth__forehead">Subtotal</th>
+                        <th class="fifth__forehead">Canasta</th>
+                    </tr>
+                </thead>
+                <tbody class="fifth__tableBody" id="tablePreOrder">
+
+                </tbody>
+      
+                <tfoot class="fifth__tableFoot" id="tablePreOrderFoot"></tfoot>
+            </table>
+        </div>
+            </div>
+        </section>
+
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="sitemap">
+            <h4 class="sitemap__title">Mapa del Sitio </h4>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--div para el POPUP-->
+    <div class="seventh">
+        <div class="seventh__signLog" id="workBoard">
+    
+                <div class="seventh__framing">
+                    <form class="seventh__subject" id="logSign">
+    
+    
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    <!--archivos js linkeados-->
+        <script src="javascript/main.js"></script>
+    <script src="javascript/login.js"></script>
+
+</body>
+
+</html>

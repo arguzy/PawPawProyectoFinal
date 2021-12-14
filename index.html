@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Veterinaria orientada a Perros -Buenos Aires, CABA-. Guardería y Peluquería Canina. Venta de Alimento Balanceado y accesorios nacionales e importados.">
+        <meta name="keywords" content="veterinaria buenos aires, veterinaria capital federal, veterinaria caba, veterinaria villa urquiza, veterinaria perro, guarderia canina, guarderia perro, peluqueria perro, peluqueria canina, petshop, accesorios para perro, ropa perros, pretales perro, correas perros, tazon perro, bowl perro, alimento balanceado perro, juguetes perro, juguete perro">
+        <meta name="author" content="Ariel Zybala">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <title>PAWPAW Veterinaria</title>
+    </head>
+<body>
+<!--Menu de navegación y brand con icono (se repite en todos los archivos, se comenta en este. En los demás va solo HEADER)-->
+<header>
+    <div id="btnsHeadSet">
+        <div class="btnsHeadSet__log" id="iconLog">
+            <a class="userLogIn" id="btnForUsers" ><i class="fa fa-user" ></i></a>
+        </div>
+        <a class="shopkart" href="productos.html" ><i class="fa fa-shopping-cart"></i></a>
+        <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+    </div>  
+    <div class="menu">
+        <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+    <input id="nav" class="menu__input" type="checkbox">
+    <nav class="menu__nav">
+        <ul class="menu__ul">
+            <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+            <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+        <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+        <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+        <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+<!--Todos los main en las páginas del sitio, tienen al menos 2 sections. Una es la Hero Section, esta en todos. Index.html, además, tiene tres sections distintas porque son trabajos que se pensaron sólo para ser usados ahí y no en otro lugar de la página; A diferencia de las secciones: Secondary, Third o Quarter, que contienen bloques de reglas similares, dónde se trabajo el uso de la menor cantidad de modificaciones sobre diferentes contenidos o estructuras de lo que se construía en el html.-->
+    <main>
+        <section class="hero hero--index">
+            <div class="hero__container">
+                <h1 class="hero__title">PAWPAW Veterinaria</h1>
+                <p class="hero__text">Una veterinaria integral, con un market, una peluquería, una guardería y mucho más!</p>
+                <div class="hero__buttons">
+                <a class="btn btn--we" href="#we"> Conocenos!</a>
+                <a class="btn btn--minor" href="contacto-faq.html"> Contactanos!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="market" id="we">
+            <div class="market__container">
+                <div class="market__message">
+                    <h2 class="market__title">PAWPAW Market!</h2>
+                    <p class="market__text">No te pierdas las ofertas de este mes</p>
+                    <a class="btn" href="productos.html">Compra!</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="services__container">
+                <div class="services__barber">
+                    <h2 class="services__title">PAWPAW Peluquería!</h2>
+                    <p class="services__subtitle">Tu mascota también necesita sentirse hermosa</p>
+                    <a class="btn" href="peluqueria.html">Turnos!</a>
+                </div>
+            </div>
+        
+            <div class="services__kinder">
+                <h2 class="services__title">PAWPAW Guardería!</h2>
+                <p class="services__subtitle">Tu mascota tiene un lugar con amigos, cuando no estas</p>
+                <a class="btn" href="guarderia.html">Turnos!</a>
+            </div>
+        </section>
+        
+        <section class="split">
+            <div class="split__image split__image--nerd"></div>
+            <div class="split__text">
+                <h3 class="split__title">Ponte en contacto con PAWPAW!</h3>
+                <p class="split__par">Una Veterinaria que es cada día más!</p>
+                <a class="btn btn--index" href="contacto-faq.html">Contactar!</a>
+            </div>
+            <div class="split__image split__image--dealer"></div>
+        </section>
+    </main>
+<!--Site Map, Form de Newsletter,  botones para redes sociales y un address con el listado de modos de contacto (se repite en todos los archivos, se comenta en este. En los demás va solo FOOTER) // Todos los footer son iguales salvo este, porque tiene un link a la página Error 404 en el copyright-->
+    <footer>
+        <div class="sitemap">
+            <h4 class="sitemap__title">Mapa del Sitio</h4>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news"><h5>Newsletter</h5></label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-twitter"><i class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+        
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.<a href="error404.html"><i class="fa fa-times" aria-hidden="true"></i></a></p>
+        </div>
+    </footer>
+    <div class="seventh">
+        <div class="seventh__signLog" id="workBoard">
+    
+                <div class="seventh__framing">
+                    <form class="seventh__subject" id="logSign">
+    
+    
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <script src="javascript/login.js"></script>
+</body>
+
+</html>

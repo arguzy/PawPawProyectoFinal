@@ -1,0 +1,29 @@
+@mixin breakpoint($point) {
+@if $point == movilbig {
+    @media (min-width:425px) {
+    @content;        
+    }
+}  
+
+@if $point == tablet {
+    @media (min-width:768px) {
+    @content;        
+    }
+} 
+
+@else if $point == notebook {
+    @media (min-width:1024px) {
+        @content;        
+        }
+}
+@else if $point == bigmonitor {
+    @media (min-width:1440px) {
+        @content;        
+        }
+}
+@else if $point == ultrahdk {
+    @media (min-width:2000px) {
+        @content;        
+        }
+}
+}

@@ -1,0 +1,17 @@
+.quarter{
+    &__funnel{
+        display: none;
+    }
+    
+    [value="pots"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="pots"]),
+    [value="food"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="food"]),
+    [value="clothe"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="clothe"]),
+    [value="belt"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="belt"]),
+    [value="pretals"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="pretals"]),
+    [value="toys"]:checked ~ .quarter__catalog .quarter__prod:not([data-category~="toys"])
+    { display: none;
+      }
+
+
+
+}

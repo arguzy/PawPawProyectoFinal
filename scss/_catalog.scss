@@ -1,0 +1,163 @@
+.quarter{
+    &__catalog{
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    &__prod{
+        margin: 10px;
+        box-shadow: $clr-shad-central;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint (tablet){
+            margin: 30px;
+            }
+    }
+
+    &__pic{
+        border-radius: .6em .6em 0em 0em;
+        border-top: solid 5px $clr-brdrs;
+        border-left: solid 5px $clr-brdrs;
+        border-right: solid 5px $clr-brdrs;
+        width: 140px;
+        height: 140px;
+        @include breakpoint (tablet){
+        width: 324px;
+        height: 324px;
+        }
+        @include breakpoint (notebook){
+        width: 442px;
+        height: 442px;
+        }
+    }
+    &__brand{
+        padding: 1em;
+        width: 140px;
+        height: 100px;
+        background: linear-gradient(90deg, rgba(57,2,166,0.95) 0%, rgba(42,0,125,1) 50%, rgba(57,2,166,1) 100%);
+        border-top: 5px solid $clr-brdrs;
+        border-left: 5px solid $clr-brdrs;
+        border-right: 5px solid $clr-brdrs;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint (tablet){
+            width: 324px;
+        }
+        @include breakpoint (notebook){
+            width: 442px;
+        }
+    }  
+    &__price{
+        height: fit-content;
+        text-align: center;
+        width: 140px;
+        padding: .5em;
+        border-left: 5px solid $clr-brdrs;
+        border-right: 5px solid $clr-brdrs;
+        background: linear-gradient(90deg, rgba(57,2,166,0.95) 0%, rgba(42,0,125,1) 50%, rgba(57,2,166,1) 100%);
+        @include breakpoint (tablet){
+        width: 324px;
+        }
+        @include breakpoint (notebook){
+        width: 442px;
+        }
+    }
+    &__item{
+        @include subcaption ($clr-text, $clr-shad-central);
+        font-weight: bolder;
+    }
+    &__code{
+        @include chief ($clr-text,normal, $clr-shad-central);
+        font-weight: bolder;
+        
+    }
+    &__amount{
+        @include concept ($clr-text, $clr-shad-central);
+        font-weight: bolder;
+    
+    }
+
+    &__purchaser{
+        width: 140px;
+        padding: 1em;
+        border-radius: 5px;
+        border-left: 5px solid $clr-brdrs;
+        border-right: 5px solid $clr-brdrs;
+        border-bottom: 5px solid $clr-brdrs;
+        border-radius: 0em 0em 0.6em 0.6em;
+        background: linear-gradient(90deg, rgba(57,2,166,0.95) 0%, rgba(42,0,125,1) 50%, rgba(57,2,166,1) 100%);
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-around;
+        align-items:center;
+        @include breakpoint (tablet){
+            
+            flex-flow: row-reverse;
+            width: 324px;
+
+        }
+        @include breakpoint (notebook){
+            width: 442px;
+        }
+        }
+        &__buy{
+            width: fit-content;
+            margin: .2em;
+            box-shadow: 0px 10px 14px -7px #616174;
+            color: #FFFFFF;
+            border-radius: .8em;
+            border: 2px #475a6c ridge;
+            padding: 10px 18px;
+            background: linear-gradient(180deg, #708090 5%, #475a6c 100%);
+            text-shadow: 1px 1px 1px #ffffff;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+                &:hover {
+                background: linear-gradient(180deg, #475a6c 5%, #708090 100%);
+                }
+            }
+                    
+        &__summation{
+            margin: .5em;
+            border-radius: .5em;
+            padding: .5em .8em;
+            color: #777777;
+            background-color: #ffffff;
+            text-align: center;
+            }
+        &__numerator{
+            display: flex;
+            flex-flow: row;
+        }
+            &__counter{
+            padding: .5em .8em;
+            border-radius: 5px;
+            border: 3px #787878 solid;
+            color: #777777;
+            background: linear-gradient(180deg, #ededed 5%, #dfdfdf 100%);
+            text-shadow: 1px 1px 1px #ffffff;
+            box-shadow: inset 1px 1px 2px 0px #ffffff;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            &:hover {
+                background: linear-gradient(180deg, #dfdfdf 5%, #ededed 100%);
+                }
+            }
+            &__num{            
+            padding: .5em .7em;
+            color: #777777;
+            background-color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            }
+}

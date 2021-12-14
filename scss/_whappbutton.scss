@@ -1,0 +1,21 @@
+.hero{
+    &__whapp{
+position:fixed;
+width: 65px;
+height: 65px;
+bottom: 15px;
+right: 30px;
+text-decoration: none;
+border: solid 6px $clr-text;
+color: $clr-text;
+font-size: 2.5em;
+background: #01E776;
+border-radius: 100px 100px 100px 0px;
+text-align: center;
+z-index: 5;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+    }
+}

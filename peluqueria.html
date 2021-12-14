@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Corte de pelo, de uñas, baño, secado, cepillado, limpieza de oídos, lagrimales y glándulas. Podes traer a tu perro o reservar turno, lo que más te convenga!">
+    <meta name="keywords"
+        content="peluquería canina, peluquería perros, peluquería perro capital federal, peluquería perro capital federal, peluquería perro caba, peluquería perro villa urquiza, corte pelo perro, corte de raza perro, corte uñas perro, baño perros, limpieza oídos perro, limpieza lagrimales perro, limpieza glándulas perro">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PAWPAW Peluquería Perruna</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div id="btnsHeadSet">
+            <div class="btnsHeadSet__log" id="iconLog">
+                <a class="userLogIn" id="btnForUsers" ><i class="fa fa-user" ></i></a>
+            </div>
+            <a class="shopkart" href="productos.html" ><i class="fa fa-shopping-cart"></i></a>
+            <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+        </div>  
+        <div class="menu">
+            <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+        <input id="nav" class="menu__input" type="checkbox">
+        <nav class="menu__nav">
+            <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+            <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+            <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+            <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+    <!--HERO /
+    SECONDARY Bloques: Order, Staff y Map -se aplicó un mixin y extend se redujo mucho la cantidad de escritura a mano
+    / THIRD Slider-->
+    <main>
+        <section class="hero hero--barber">
+            <div class="hero__container">
+                <h1 class="hero__title">PAWPAW Peluquería</h1>
+                <p class="hero__text">Corte de pelo, de uñas, baño, secado, cepillado, limpieza de oídos, lagrimales, y
+                    mucho más!</p>
+                <a href="#turno-barber" class="btn btn__hero">Pedír Turno!</a>
+            </div>
+        </section>
+
+        <section class="secondary">
+            <div class="secondary__container secondary__container--order">
+                <div class="secondary__charge">
+                    <div class="secondary__framing">
+                        <h3 class="secondary__title">Pedir turno al Whatsapp</h3>
+                        <p class="secondary__text">Escribí un mensaje con estos datos, al (011) 5111-9999:</p>
+                        <ol class="secondary__list">
+                            <li class="secondary__item">Nombre y Apellido.</li>
+                            <li class="secondary__item">Teléfono para Emergencias.</li>
+                            <li class="secondary__item">Raza y Tamaño.</li>
+                            <li class="secondary__item">Días y Horarios en los que podes traer a tu mascota.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondary__container secondary__container--haircut">
+                <div class="secondary__staff secondary__staff--groomer">
+                    <div class="secondary__framing">
+                        <h3 class="secondary__title">¿Quienes son nuestros Peluqueros?</h3>
+                        <p class="secondary__text">En PawPaw, contratamos profesionales egresados del ISE.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondary__container secondary__container--map">
+                <div class="secondary__ubication">
+                    <div class="secondary__framing">
+                        <h3 class="secondary__title">¿Dónde se encuentra la Peluquería de PawPaw?</h3>
+                        <p class="secondary__text">La podes encontrar en la calle Franklin D. Roosevelt 2500, del Barrio
+                            de
+                            Belgrano en la Ciudad Autónoma de Buenos Aires.
+                        </p>
+                    </div>
+                </div>
+                <iframe class="secondary__gps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d710.9955661869743!2d-58.46142114979668!3d-34.55855304454871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42af5a93c99%3A0x6f3cd9454b39c49a!2sFranklin%20D.%20Roosevelt%202500%2C%20C1428BOL%20CABA!5e0!3m2!1ses-419!2sar!4v1626127120996!5m2!1ses-419!2sar"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="third">
+            <div class="third__slider">
+                <div class="third__framing">
+                    <div class="third__message">
+                        <h3 class="third__title">Buenos peluqueros e instalaciones!</h3>
+                        <p class="third__par">Nuestro desafío es que tu mascota, tenga la mejor experiencia!</p>
+                    </div>
+                    <div class="third__pics">
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic1-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic2-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic3-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic4-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic5-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic6-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic7-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+
+                        <div>
+                            <img class="third__img" src="media/barber/slidebarber/slider-pic8-barber.jpg"
+                                alt="perro-en-peluqueria">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="sitemap">
+            <h5 class="sitemap__title">Mapa del Sitio</h5>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!--div para el POPUP-->
+    <div class="seventh">
+        <div class="seventh__signLog" id="workBoard">
+    
+                <div class="seventh__framing">
+                    <form class="seventh__subject" id="logSign">
+    
+    
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    <!--Para conectar el archivo js-->
+        <script src="javascript/login.js"></script>
+</body>
+
+</html>

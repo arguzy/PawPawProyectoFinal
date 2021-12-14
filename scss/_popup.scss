@@ -1,0 +1,165 @@
+.seventh{
+    z-index: 2;
+    top: 45px;
+    position: fixed;
+    width: 100vw;
+    height: 400em;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    background-color: rgba(170, 170, 170, 0.50);
+    display: none;
+
+&__SignLog{
+    margin-top: 35px;
+    flex-flow: column;
+    align-items: center;
+    justify-items: initial;
+    display: flex;
+}
+
+&__framing{
+    margin-top: 80px;
+    width: fit-content;
+    height: fit-content;
+    padding: .5em;
+    background: linear-gradient(145deg, #e26198 0%, #e07e69 50%, #e2616c 100%);
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px 5px rgb(70, 70, 70) ;
+    border:solid 2px white ;
+   
+}
+&__subject{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(184, 135, 11, 0.165);
+    border-radius: 25px;
+    }    
+&__head{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: left;
+}
+
+&__btnClose{
+    all: unset;
+    color: rgb(91, 0, 165);
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+&__lead{
+    
+    @include concept (rgb(0, 0, 0), rgba(170, 170, 170, 0.426));
+    font-weight: bolder;
+    text-align: center;
+    @include breakpoint(notebook){
+ font-size: 1em;
+    }
+    @include breakpoint(bigmonitor){
+        font-size: 1.3em;
+           }
+}
+
+&__profile{
+    display: contents;
+width: fit-content;
+}
+
+&__label{
+    @include textForm (rgb(0, 0, 0), rgba(170, 170, 170, 0.426));
+    font-weight:600;
+}
+&__par{
+    padding: .5em;
+    @include breakpoint(notebook){
+        padding: .2em;
+    }
+}
+&__input{
+    @include tale (rgba(0, 0, 0, 0.508), rgba(170, 170, 170, 0.426));
+
+}
+&__message{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+&__recover{
+    @include tale (rgb(31, 0, 104), rgba(170, 170, 170, 0.426));
+    text-align: center;
+}
+
+&__operator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+&__btnSend{
+    margin-top: 10px;
+    @include tale (rgb(255, 255, 255), rgba(170, 170, 170, 0.426));
+    border-radius: 5px;
+    padding: .5em 1em;
+    background: linear-gradient(180deg, #6a00ff 5%, #8f10ce 100%);
+    cursor: pointer;
+    user-select: none;
+    
+    }
+&__error{
+    @include tale (rgb(255, 255, 255), rgba(170, 170, 170, 0.426));
+    text-align: center;
+    @include breakpoint (notebook){
+        font-size: .8em;
+      }
+}
+
+
+&__lookup{
+    position: absolute;
+    color: whitesmoke;
+}
+&__flexColumn{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+&__framingForms{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 200px;
+    @include breakpoint (notebook){
+        max-width: 250px;
+        min-width: 250px;
+
+      }
+
+}
+&__padding{
+    padding: 15px 15px;
+}
+}
+
+
+.bringON{
+    display:flex;
+}
+.turnOFF{
+    display:none;
+}
+
+.userless{
+    visibility: hidden;
+}

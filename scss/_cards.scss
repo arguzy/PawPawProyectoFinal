@@ -1,0 +1,149 @@
+.secondary{
+//container con todos los backgrounds
+    &__container{
+    &--order{
+    @include cardbuild (url('../media/charge-turn.jpg'));
+    animation: bkgmovelr 10s infinite ease-in-out;
+    }
+    &--keeper{
+        @include cardbuild (url('../media/kinder/secondary-couch.jpg'));
+        justify-content:flex-end;
+    }
+    &--haircut{
+        @include cardbuild (url('../media/barber/secondary-staff-barber.jpg'));
+        justify-content:flex-end;
+    }
+    &--map{
+        @include cardbuild (none);
+        justify-content:flex-start;
+        border: solid 5px $clr-brdrs;
+    }
+    }
+
+//order (esta en Peluquería, Guardería y Productos)
+    &__charge{ 
+        width: 100%;
+        height: 100%;
+        border-radius: .6em;
+        background:$clr-bkg-second;
+        animation: bkgopacity 5s infinite ease-in-out;
+        border: solid 5px $clr-brdrs;
+    }
+    &__framing{
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__list{
+        list-style: none;
+        @include concept ($clr-text, $clr-shad-central);
+        font-weight: lighter;
+        text-align:left;
+    }
+    &__item{
+        padding: .5em;
+    }
+//Card Guardería y Peluquería staff
+&__staff{ 
+    width: 100%;
+    height: 50%;
+    border-radius: .6em;
+    animation: bkgopacity 5s infinite ease-in-out;
+    border-top: solid 5px $clr-brdrs;
+    
+    &--trainer{
+    background:$clr-bkg-third;
+    }
+    
+    &--groomer{
+    background:$clr-bkg-quarter;
+    }
+}
+//card mapa
+
+
+&__ubication{
+    width: 200px;
+    height: fit-content;
+    position: absolute;
+    background: $clr-bkg-first;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    border-bottom-left-radius: 5em;
+    border-left: solid 5px $clr-brdrs;
+    border-right: solid 5px $clr-brdrs;
+    border-bottom: solid 5px $clr-brdrs;
+    box-shadow: -2px 4px 6px $clr-shad-central;
+    animation: bkgopacity infinite 5s;
+    @include breakpoint (movilbig){
+        width: 200px;
+    }
+    @include breakpoint (tablet){
+        width: 250px;
+    }
+    @include breakpoint (notebook){
+        width: 350px;
+    }
+}
+
+&__gps{
+    width: 100%;
+    height: 100%;
+    border-radius: .6em;
+}
+    &__title{
+    @include caption ($clr-text, $clr-shad-central);
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 1em;
+    @include breakpoint (notebook){
+        font-size: 2em;
+
+    }
+}
+    &__text{
+        @include chief ($clr-text, normal, $clr-shad-central);
+        text-align:center;
+        padding-bottom: .8em;
+    }
+
+}
+
+
+
+
+//map contacto
+.third{
+    &__container{
+        &--map{
+        @include cardbuild (none);
+        justify-content:flex-start;
+        border: solid 5px $clr-brdrs;
+        }
+    }
+
+    &__ubication{
+    @extend .secondary__ubication;
+    }
+
+    &__gps{
+    @extend .secondary__gps;
+    }
+    &__title{
+    @extend .secondary__title;
+
+    }
+    &__text{
+    @extend .secondary__text;
+    padding-bottom: 2em
+    }
+
+}
+
+.visualChange{
+    animation: clickOnCard 1s  both;
+}

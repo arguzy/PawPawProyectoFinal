@@ -1,0 +1,126 @@
+
+@keyframes blinks {
+  0%{background: rgb(225, 171, 34);;}
+  10%{background:none;}
+  12%{background: rgb(225, 171, 34);}
+  40%{background:none;}
+  42%{background: rgb(255, 194, 39);}
+  60%{background: rgb(238, 181, 36);}
+  70%{background: rgb(255, 200, 61);}
+  80%{background: rgb(248, 203, 87);}
+  100%{background: rgb(252, 229, 169);}
+  }
+  
+  @keyframes beep { 
+      0% {padding: 1em;} 
+      25% {padding: 1.2em;} 
+      50% {padding: 1em;}
+      75% {padding: .8em;} 
+      100% {padding: 1em;}
+       
+  }
+
+  @keyframes slap {
+    0% {transform:rotate(0deg);}
+    40% {transform:rotate(180deg);}
+    60% {transform:rotate(180deg);}
+    100% {transform:rotate(0deg);}
+  }
+
+  @keyframes quake { 
+    0% { transform: translateX(0%); } 
+    15% { transform: translateX(-30%) rotate(-8deg); } 
+    30% { transform: translateX(30%) rotate(2deg); } 
+    45% { transform: translateX(-15%) rotate(-4deg); } 
+    60% { transform: translateX(10%) rotate(3deg); } 
+    75% { transform: translateX(-5%) rotate(-1deg); } 
+    100% { transform: translateX(0%); } 
+  } 
+
+
+
+
+@keyframes spingx {
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(360deg);}
+}
+@keyframes spingy {
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
+
+
+@keyframes floating {
+    from {border-radius: 200px 5px 200px 5px; box-shadow: 15px 10px #a973ff95}
+    to {border-radius: 5px 200px 5px 200px; box-shadow: -15px -10px #a973ffaa}
+    }
+
+    @keyframes bkgmovelr {
+        0%{background-position: left;}
+        50%{background-position: right;}
+        100%{background-position: left;}
+      }
+      @keyframes bkgopacity {
+      0%{opacity: 1;}
+      50%{opacity: .8;}
+      100%{opacity: 1;}
+      }
+
+      @keyframes carousel{
+        0%{margin-left:0px;}
+        6%{margin-left:0px;}
+    
+        13%{margin-left:-400px;}
+        19%{margin-left:-400px;}
+    
+        26%{margin-left:-800px;}
+        32%{margin-left:-800px;}
+    
+        39%{margin-left:-1200px;}
+        45%{margin-left:-1200px;}
+    
+        52%{margin-left:-1600px;}
+        58%{margin-left:-1600px;}
+    
+        65%{margin-left:-2000px;}
+        73%{margin-left:-2000px;}
+    
+        80%{margin-left:-2400px;}
+        87%{margin-left:-2400px;}
+    
+        96%{margin-left:-2800px;}
+        100%{margin-left:-2800px;}
+        }
+        @include breakpoint (tablet){
+        @keyframes carousel{
+            0%{margin-left:300px;}
+            6%{margin-left:300px;}
+        
+            13%{margin-left: 58px;}
+            19%{margin-left: 58px;}
+        
+            26%{margin-left:-184px;}
+            32%{margin-left:-184px;}
+        
+            39%{margin-left:-426px;}
+            45%{margin-left:-426px;}
+        
+            52%{margin-left:-668px;}
+            58%{margin-left:-668px;}
+        
+            65%{margin-left:-910px;}
+            73%{margin-left:-910px;}
+        
+            80%{margin-left:-1152px;}
+            87%{margin-left:-1152px;}
+        
+            96%{margin-left:-1394px;}
+            100%{margin-left:-1394px;}
+            }
+        }
+         
+@keyframes clickOnCard { 
+
+  from {color: rgb(204, 154, 27);} 
+  to {transform: rgb(67,15,170);} 
+} 

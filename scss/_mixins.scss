@@ -1,0 +1,145 @@
+@mixin caption ($clrfont, $shadow){
+    font-family: 'Quicksand',  sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: normal;
+    text-shadow: $shadow 2px -2px 2px;
+    color: $clrfont;
+      @include breakpoint (tablet){
+       font-size: 2.2em;
+      }
+      @include breakpoint (notebook){
+        font-size: 3em;
+      }
+}
+
+@mixin subcaption ($clrfont, $shadow){
+  font-family: 'Quicksand',  sans-serif;
+  font-size: 1em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow;
+  color: $clrfont;
+    @include breakpoint (tablet){
+     font-size: 1.3em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.8em;
+    }
+}
+
+@mixin chief ($fontcolor, $fontstyle, $shadow){
+  font-family: 'Quicksand',  sans-serif;
+  font-size: 1em ;
+  font-weight: normal;
+  font-style: $fontstyle;
+  text-shadow: $shadow -2px 2px 2px ;
+  color: $fontcolor;
+    @include breakpoint (tablet){
+     font-size: 1.2em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.6em;
+    }
+
+}
+
+@mixin concept ($fontcolor, $shadow){
+  font-family: 'Comfortaa',  sans-serif;
+  font-size: .8em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow -2px 2px 2px ;
+  color: $fontcolor;
+    @include breakpoint (tablet){
+     font-size: 1.1em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.5em;
+    }
+}
+
+@mixin tale ($fontcolor, $shadow){
+  font-family: 'Comfortaa',  sans-serif, sans-serif;
+  font-size: .6em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow 2px 2px 2px ;
+  color: $fontcolor;
+    @include breakpoint (tablet){
+     font-size: .8em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.1em;
+    }
+}
+
+@mixin counter ($fontcolor, $shadow){
+  font-family: 'Comfortaa',  sans-serif, sans-serif;
+  font-size: .5em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow 2px 2px 2px ;
+  color: $fontcolor;
+}
+
+
+
+@mixin textForm ($fontcolor, $shadow){
+  font-family: 'Comfortaa',  sans-serif, sans-serif;
+  font-size: .6em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow 2px 2px 2px ;
+  color: $fontcolor;
+    @include breakpoint (tablet){
+     font-size: .7em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.2em;
+    }
+}
+
+@mixin btnext ($fontcolor, $shadow){
+  font-family: 'Comfortaa',  sans-serif, sans-serif;
+  font-size: .68em ;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: $shadow 2px 2px 2px ;
+  color: $fontcolor;
+    @include breakpoint (tablet){
+     font-size: 1em;
+    }
+    @include breakpoint (notebook){
+      font-size: 1.5em;
+    }
+}
+
+@mixin cardbuild ($bkgimg){
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: .6em;
+  box-shadow: -2px 4px 6px $clr-shad-central;
+  background-image: ($bkgimg) ;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include breakpoint (movilbig){
+    width: 200px;
+    height: 450px;
+  }
+  @include breakpoint (tablet){
+    width: 250px;
+    height: 550px;
+}
+   @include breakpoint (notebook){
+    width: 350px;
+    height: 650px;
+   }
+}

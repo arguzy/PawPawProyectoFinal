@@ -1,0 +1,36 @@
+.market{
+    margin: 0%;
+    margin-top: 100px;
+    width: 100%;
+    height: 40vh;
+    background-image: url(../media/idx/bann-mkt.jpg);
+    @extend .hero--index;
+
+    &__container{
+    background: linear-gradient(180deg, rgba(73,73,73,0.40) 0%, rgba(243,245,255,0) 25%, rgba(243,245,255,0) 80%, rgba(73,73,73,0.40) 100%);;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    }
+    &__message{
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    
+}
+    &__title{
+        padding: .6em 0;
+    @include caption ($clr-text, $clr-shad-central);
+    font-weight: bolder;
+}
+
+    &__text{
+        padding: .6em 0;
+        @include concept ($clr-text, $clr-shad-central);
+        font-weight: bolder;
+
+    }
+}
+
